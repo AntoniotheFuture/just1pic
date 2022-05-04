@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<head>
+    <link href="./bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <style>
+        .component-group{
+            display: flex;
+            flex-direction: row;
+            align-items:flex-start;
+            justify-content: space-between;
+            flex-flow: wrap;
+            flex-wrap: wrap;
+        }
+        .component{
+            background-color: #cccccc;
+            border-radius: 3mm;
+            width: 55mm;
+            height: auto;
+            color: black;
+            margin-bottom: 5mm;
+            padding:1mm;
+            padding-left: 3mm;
+            flex-grow: 0;
+            flex-basis: auto;
+            font-family: PingFangSC-Medium, sans-serif;
+        }
+        .component-h5{
+            
+        }
+
+        .component-auto{
+            width: auto;
+        }
+    </style>
+</head>
+<body class="page">
+    <p class="section-title">文本元素</p>
+    <div class="component-group">
+        <div class="component">
+            &lt;a&gt;锚点&lt;/a&gt;
+        </div>
+        <div class="component">
+            &lt;strong&gt;强调&lt;/strong&gt;
+        </div>
+        <div class="component">
+            &lt;b&gt;粗体&lt;/b&gt;
+        </div>
+        <div class="component">
+            &lt;span&gt;节&lt;/span&gt;
+        </div>
+        <div class="component">
+            &lt;em&gt;强调&lt;/em&gt;
+        </div>
+        <div class="component">
+            &lt;p&gt;段落&lt;/p&gt;
+        </div>
+        <div class="component">
+            &lt;abbr&gt;缩写&lt;/abbr&gt;
+        </div>
+        <div class="component">
+            &lt;s&gt;删除文本&lt;/s&gt;
+        </div>
+        <div class="component">
+            &lt;i&gt;斜体&lt;/i&gt;
+        </div>
+        <div class="component">
+            &lt;br&gt;下一行&lt;/br&gt;
+        </div>
+        <div class="component">
+            &lt;u&gt;下划线&lt;/u&gt;
+        </div>
+        <div class="component">
+            &lt;hr&gt;水平线
+        </div>
+        <div class="component">
+            &lt;sup&gt;上标&lt;/sup&gt;
+        </div>
+        <div class="component">
+            &lt;sub&gt;下标&lt;/sub&gt;
+        </div>
+        <div class="component">
+            &lt;small&gt;小字&lt;/small&gt;
+        </div>
+    </div>
+    <p class="section-title">结构</p>
+    <div class="component-group">
+        <div class="component">
+            <p>文档结构</p>
+            <P>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                &lt;meta&gt;<br>
+                &lt;title&gt;&lt;/title&gt;<br>
+                &lt;link&gt;<br>
+                &lt;style&gt;<br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                &lt;header&gt;&lt;/header&gt;<br>
+                &lt;main&gt;&lt;/main&gt;<i class="fab fa-html5"></i><br>
+                &lt;footer&gt;&lt;/footer&gt;<br>
+                &lt;script&gt;&lt;/script&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
+            </P>
+        </div>
+        <div class="component">
+            <p>表格</p>
+            <P>
+                &lt;table&gt;<br>
+                &lt;thead&gt;<br>
+                &lt;tr&gt;&lt;th&gt;&lt;/tr&gt;<br>
+                &lt;/thead&gt;<br>
+                &lt;tbody&gt;<br>
+                &lt;tr rowspan="1"&gt;&lt;td colspan="1"&gt;&lt;/tr&gt;<br>
+                &lt;/tbody&gt;<br>
+                &lt;tfoot&gt;<br>
+                &lt;/tfoot&gt;<br>
+                &lt;/table&gt;<br>
+            </P>
+        </div>
+        <div class="component">
+            <p>列表和表单</p>
+            <P>
+                &lt;ol&gt;有序列表&lt;/ol&gt;<br>
+                &lt;ul&gt;无序列表&lt;/ul&gt;<br>
+                &lt;li&gt;列表项目&lt;/li&gt;<br>
+                &lt;dl&gt;定义列表&lt;/dl&gt;<br>
+                &lt;dd&gt;定义描述&lt;/dd&gt;<br>
+            </P>
+            <P>
+                &lt;form&gt;<br>
+                &lt;input&gt;输入<br>
+                &lt;button&gt;按钮&lt;/button&gt;<br>
+                &lt;label&gt;文本&lt;/label&gt;<br>
+                &lt;select&gt;<br>
+                &lt;option&gt;<br>
+                &lt;/select&gt;<br>
+                &lt;textarea&gt;输入&lt;/textarea&gt;<br>
+            </P>
+        </div>
+        
+    </div>
+    <p class="section-title">其它元素</p>
+    <div class="component-group">
+        <div class="component">
+            &lt;div&gt;节&lt;/div&gt;
+        </div>
+        <div class="component">
+            &lt;hn&gt;标签&lt;/hn&gt;
+        </div>
+        <div class="component">
+            &lt;article&gt;文章&lt;/article&gt;
+        </div>
+        <div class="component">
+            &lt;img&gt;图像
+        </div>
+        <div class="component">
+            <i class="fab fa-html5"></i>
+            &lt;audio&gt;声音&lt;/audio&gt;
+        </div>
+        <div class="component">
+            <i class="fab fa-html5"></i>
+            &lt;video&gt;视频&lt;/video&gt;
+        </div>
+        <div class="component">
+            <i class="fab fa-html5"></i>
+            &lt;svg&gt;SVG&lt;/svg&gt;
+        </div>
+        <div class="component">
+            &lt;kbd&gt;键盘&lt;/kbd&gt;
+        </div>
+        <div class="component">
+            <i class="fab fa-html5"></i>
+            &lt;code&gt;代码&lt;/code&gt;
+        </div>
+        <div class="component">
+            &lt;canvas&gt;画布&lt;/canvas&gt;
+        </div>
+        <div class="component component-auto">
+            &lt;blockquote&gt;引用&lt;/blockquote&gt;
+        </div>
+        <div class="component component-auto">
+            &lt;iframe&gt;框架&lt;/iframe&gt;
+        </div>
+        <div class="component component-auto">
+            &lt;noscript&gt;无脚本显示文本&lt;/noscript&gt;
+        </div>
+        <div class="component component-auto">
+            <i class="fab fa-html5"></i>
+            &lt;embed&gt;外部资源&lt;/embed&gt;
+        </div>
+        <div class="component component-auto">
+            &lt;!--注释--&gt;
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-4" style="text-align: left;">
+                一张图技术(HTML)
+            </div>
+             <div class="col-4" style="text-align: center;">
+                <a href="index.html">目录</a>
+            </div>
+             <div class="col-4" style="text-align: right;">
+                AntonioTheFuture @2022
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
