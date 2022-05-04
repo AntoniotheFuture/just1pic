@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<head>
+    <link href="./bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <style>
+        .component-group{
+            display: flex;
+            flex-direction: row;
+            align-items:flex-start;
+            justify-content: space-between;
+            flex-flow: wrap;
+            flex-wrap: wrap;
+        }
+        .component{
+            background-color: #cccccc;
+            border-radius: 3mm;
+            width: 55mm;
+            height: auto;
+            color: black;
+            margin-bottom: 5mm;
+            padding:1mm;
+            padding-left: 3mm;
+            flex-grow: 0;
+            flex-basis: auto;
+            font-family: PingFangSC-Medium, sans-serif;
+        }
+        .component-h5{
+            
+        }
+
+        .component-auto{
+            width: auto;
+        }
+    </style>
+</head>
+<body class="page">
+    <div class="component-group">
+        <div class="component">
+            <p>
+                选择器<br>
+                a、h1、div元素<br>
+                .类<br>
+                #id<br>
+                *通用<br>
+                :伪类<br>
+                ::伪元素<br>
+                [attr=?]属性
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                伪类<br>
+                :link未访问链接<br>
+                :visited已访问链接<br>
+                :hover悬停<br>
+                :checked选中的input<br>
+                :first-child第一个子元素<br>
+                :focus焦点<br>
+
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                文本<br>
+                text-decoration装饰<br>
+                text-transform大小写<br>
+                letter-spacing字符间距<br>
+                line-height行距<br>
+                word-spacing单词间距<br>
+                white-space空白处理<br>
+                text-shadow阴影<br>
+                font-weight粗细<br>
+                text-overflow溢出类型<br>
+                word-wrap单词分行<br>
+                word-break换行规则
+
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                position定位<br>
+                static静态<br>
+                relative相对<br>
+                fixed固定在视口<br>
+                absolute祖先绝对定位<br>
+                sticky滚动位置<br>
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                clear清除浮动<br>
+                none允许浮动<br>
+                left左侧清除<br>
+                right右侧清除<br>
+                both两侧清除<br>
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                组合计算<br>
+                默认选择所有后代<br>
+                > 子选择器<br>
+                + 相邻选择器<br>
+                ～ 兄弟选择器<br>
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                transform 形变<br>
+                translate平移<br>
+                rotate旋转<br>
+                scale缩放<br>
+                skew倾斜<br>
+                matrix组合
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                transition 平滑过渡<br>
+                delay延时<br>
+                duration持续<br>
+                property属性名称<br>
+                timing-function曲线<br>
+                matrix组合
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                animation动画<br>
+                @keyframes 声明动画<br>
+                from 开始属性<br>
+                to 结束属性<br>
+                n% 关键帧位置<br>
+                -name绑定动画<br>
+                -duration动画时长<br>
+                -delay延迟<br>
+                -iteration-count次数<br>
+                -direction方向
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                flex布局模块<br>
+                -direction排列方向<br>
+                -wrap换行<br>
+                -flow上述简写<br>
+                justify-content对齐<br>
+                align-items轴对齐<br>
+                order 子元素位置<br>
+                -grow变大程度<br>
+                -shrink压缩程度<br>
+                -basis初始长度<br>
+                flex子元素简写
+            </p>
+        </div>
+        <div class="component">
+            border: 大小 类型 颜色;
+        </div>
+        <div class="component">
+            outline: 大小 类型 颜色;
+        </div>
+        <div class="component">
+            margin: 上 右 下 左;
+        </div>
+        <div class="component">
+            margin: 垂直 水平;
+        </div>
+        <div class="component">
+            padding: 上 右 下 左;
+        </div>
+        <div class="component">
+            padding: 垂直 水平;
+        </div>
+        <div class="component">
+            border-radius: 左上 右上 右下 左下;
+        </div>
+        <div class="component">
+            background:来源 重复 位置 大小
+        </div>
+        <div class="component">
+            linear-gradient(方向 开始颜色 结束颜色)
+        </div>
+        <div class="component">
+            box-shadow: Y X 模糊 大小 颜色;
+        </div>
+        <div class="component">
+            var(变量名, 内容)
+        </div>
+        <div class="component">
+            box-sizing:border-box;
+        </div>
+        <div class="component">
+            @media媒体查询
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-4" style="text-align: left;">
+                一张图技术(HTML)
+            </div>
+             <div class="col-4" style="text-align: center;">
+                <a href="index.html">目录</a>
+            </div>
+             <div class="col-4" style="text-align: right;">
+                AntonioTheFuture @2022
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
