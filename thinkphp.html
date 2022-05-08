@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+    <link href="./bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <style>
+        .component-group{
+            /* display: flex; */
+            column-count:3;
+            /* flex-direction: column;
+            align-items:flex-start;
+            justify-content: space-between;
+            flex-flow: wrap;
+            flex-wrap: wrap; */
+        }
+        .component{
+            background-color: #eeeeee;
+            border-radius: 3mm;
+            width: 55mm;
+            height: auto;
+            color: black;
+            margin-bottom: 5mm;
+            padding:1mm;
+            padding-left: 3mm;
+            flex-grow: 0;
+            flex-basis: auto;
+            font-family: PingFangSC-Medium, sans-serif;
+        }
+        .component-h5{
+            
+        }
+
+        .component-auto{
+            width: auto;
+        }
+
+        
+    </style>
+</head>
+<body class="page">
+    <div class="component-group">
+        <div class="component">
+            <p>
+                配置<br>
+                Config::get('配置参数1')<br>
+                Config::get('配置.二级');<br>
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                控制器<br>
+                $beforeActionList=[]<br>
+                前置操作<br>
+                _empty()空操作<br>
+                class Error空控制器<br>
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                数据库<br>
+                getLastInsID返回主键<br>
+                startTrans()事务<br>
+                commit()<br>
+                rollback()<br>
+                isDirectory<br>
+                readObject反序列化<br>
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                数据库事件<br>
+                Query::event('事件','回调');<br>
+                before_select<br>
+                before_find<br>
+                after_insert<br>
+                after_update<br>
+                after_delete<br>
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                模型<br>
+                get???Attr获取器<br>
+                getData原始数据<br>
+                set???Attr修改器<br>
+                $readonly自渎字段<br>
+                use SoftDelete软删除<br>
+                withTrashed<br>
+                onlyTrashed<br>
+                base($query)全局范围<br>
+
+                after_delete<br>
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                模型关联<br>
+                hasOne一对一<br>
+                hasMany一对多<br>
+                hasManyThrough一对多(远)<br>
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                视图<br>
+                fetch模板<br>
+                display内容<br>
+                assign变量<br>
+                engine初始化<br>
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                模板<br>
+                {$Think.server<br>
+                -.session<br>
+                -.get<br>
+                -.cookie<br>
+                -.config<br>
+                |default=默认值<br>
+                ?? '三元运算'<br>
+                {volist name="" id=""}循环<br>
+                {$vo.id}:{$vo.name}<br>
+                {/volist}<br>
+
+            </p>
+        </div>
+        <div class="component">
+            {:token()}<br>
+            $this->token()
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-4" style="text-align: left;">
+                一张图技术(thinkphp)
+            </div>
+             <div class="col-4" style="text-align: center;">
+                <a href="index.html">目录</a>
+            </div>
+             <div class="col-4" style="text-align: right;">
+                AntonioTheFuture @2022
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
