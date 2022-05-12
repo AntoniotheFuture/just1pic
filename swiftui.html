@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<head>
+    <link href="./bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <style>
+        .component-group{
+            /* display: flex; */
+            column-count:3;
+            /* flex-direction: column;
+            align-items:flex-start;
+            justify-content: space-between;
+            flex-flow: wrap;
+            flex-wrap: wrap; */
+        }
+        .component{
+            background-color: #eeeeee;
+            border-radius: 3mm;
+            height: auto;
+            color: black;
+            margin-bottom: 5mm;
+            padding:1mm;
+            padding-left: 3mm;
+            flex-grow: 0;
+            flex-basis: auto;
+            font-family: PingFangSC-Medium, sans-serif;
+        }
+        .component .component{
+            background-color: #dddddd;
+            margin-bottom: 1mm;
+        }
+        .component p{
+            margin-bottom: 2px;
+        }
+        .component-h5{
+            
+        }
+
+        .component-auto{
+            width: auto;
+        }
+        .title{
+            font-size: 16px;
+            margin-bottom: 1px;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body class="page">
+    <div class="component-group">
+        <div class="component">
+            <p>
+                Form<br>
+                GroupBox<br>
+                List<br>
+                NavigationView<br>
+                ScrollView<br>
+                Section<br>
+                TabView<br>
+                ZStack<br>
+                GeometryReader<br>
+                HStack<br>
+                LazyHStack<br>
+                LazyVStack<br>
+                VStack<br>
+                EmptyView
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                Button(action: {}) {<br>
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                DatePicker(
+                "选日期",<br>
+                selection: $date,<br>
+                displayedComponents: [.date]<br>
+            </p>
+        </div>
+       
+        <div class="component">
+            <p>
+                Label("文字", systemImage: "图标")
+            </p>
+        </div>
+        
+        <div class="component">
+            <p>
+               Link("链接",destination: URL(string: "网址")!)
+            </p>
+        </div>
+        <div class="component">
+            <p>
+            Menu("菜单") {<br>
+            Button("", action: {})<br>
+            Menu("次级") {<br>
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                NavigationLink("", destination: d())    
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                Picker("选择", selection: $s) {<br>
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                ProgressView(value: p)
+            </p>
+        </div>
+        <div class="component">
+           <p>Text("")</p>
+        
+        </div>
+        <div class="component">
+            <p>TextEditor(text: $s)</p>
+        </div>
+        <div class="component">
+            <p> TextField(<br>
+            "输入框",<br>
+            text: $t</p>
+        </div>
+        <div class="component">
+            <p>Toggle(isOn: $t) {<br>
+        </div>
+        <div class="component">
+            Spacer()
+        </div>
+        <div class="component">
+            AngularGradient<br>
+            EllipticalGradient<br>
+            LinearGradient<br>
+            RadialGradient<br>
+        </div>
+        <div class="component">
+            <p>
+            Capsule,Circle,Divider,<br>
+            Ellipse,Rectangle,<br>RoundedRectangle
+            </p>
+            
+        </div>
+        <div class="component">
+            <p>
+                .actionSheet(item: $s) { detail in<br>
+                ActionSheet(<br>
+                .alert(item: $a) { details in<br>
+                Alert(<br>
+                badge()<br>
+                .sheet(item: $s,<br>
+                onDismiss: {}) { detail in<br>
+            </p>
+        </div>
+        <div class="component">
+            statusBar(hidden: Bool)
+        </div>
+        <div class="component">
+            .tabItem {}
+        </div>
+        <div class="component">
+            <p>
+            .blur.border.clipShape<br>.clipped.cornerRadius<br>.foregroundColor
+            .hueRotation.mask.opacity<br>.rotationEffect.scaleEffect<br>.shadow
+            .transformEffect
+            </p>
+        </div>
+        <div class="component">
+            <p>
+            .aspectRatio.background<br>.edgesIgnoringSafeArea<br>.fixedSize.frame<br>.ignoresSafeArea<br>.layoutPriority.overlay
+            .position<br>.scaledToFill.scaledToFit<br>.zIndex
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-4" style="text-align: left;">
+                一张图技术(SwiftUI)
+            </div>
+             <div class="col-4" style="text-align: center;">
+                <a href="index.html">目录</a>
+            </div>
+             <div class="col-4" style="text-align: right;">
+                AntonioTheFuture @2022
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

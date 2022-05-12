@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<head>
+    <link href="./bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <style>
+        .component-group{
+            /* display: flex; */
+            column-count:3;
+            /* flex-direction: column;
+            align-items:flex-start;
+            justify-content: space-between;
+            flex-flow: wrap;
+            flex-wrap: wrap; */
+        }
+        .component{
+            background-color: #eeeeee;
+            border-radius: 3mm;
+            width: 100%;
+            height: auto;
+            color: black;
+            margin-bottom: 5mm;
+            padding:1mm;
+            padding-left: 3mm;
+            flex-grow: 0;
+            flex-basis: auto;
+            font-family: PingFangSC-Medium, sans-serif;
+        }
+        .component .component{
+            background-color: #dddddd;
+            margin-bottom: 1mm;
+        }
+        .component-h5{
+            
+        }
+
+        .component-auto{
+            width: auto;
+        }
+
+        .caption{
+            color: #888888;
+        }
+
+        .title{
+            font-size: 16px;
+            margin-bottom: 1px;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body class="page">
+    <div class="component-group">
+        <p class="title">基本</p>
+        <div class="component">
+            <p>
+                SELECT<br>
+                (Distinct)<br>
+                <span class="caption">字段,计算</span><br>
+                FROM<br>
+                <span class="caption">表1,表2</span><br>
+                JOIN<br>
+                <span class="caption">表3 别名</span><br>
+                ON <span class="caption">表1.id = 表3.id</span>
+                WHERE<br>
+                <span class="caption">条件</span><br>
+                AND/OR<br>
+                <span class="caption">条件</span><br>
+                Order by<br>
+                <span class="caption">排序</span><br>
+                Group by<br>
+                <span class="caption">分组</span><br>
+                Having<br>
+                <span class="caption">分组条件</span>
+            </p>
+        </div>
+        <p class="title">分页TOP</p>
+        <div class="component">
+            <p>
+                MYSQL:<br>
+                 <div class="component">
+                    LIMIT x<br>
+                 </div>
+                Oracle:<br>
+                <div class="component">
+                    WHERE ROWNUM between x and y<br>
+                 </div>
+                SQL Server:<br>
+                 <div class="component">
+                    SELECT TOP x(%) ...<br>
+                 </div>
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                SELECT * <br>
+                INTO new_table_name<br>
+                FROM old_tablename<br>
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                CREATE TABLE 表名称(<br>
+                列名称1 数据类型,<br>
+                列名称2 数据类型,<br>
+                ....<br>
+                )<br>
+            </p>
+        </div>
+        <p class="title">字段约束</p>
+        <div class="component">
+            <p>
+                NOT NULL<br>
+                UNIQUE<br>
+                PRIMARY KEY<br>
+                <div class="component">
+                    FOREIGN KEY ? REFERENCES ?
+                 </div>
+                CHECK 条件<br>
+                DEFAULT<br>
+                AUTO INCREMENT<br>
+                IDENTITY自增<br>
+            </p>
+        </div>
+        <p class="title">创建索引</p>
+        <div class="component">
+            <p>
+                CREATE INDEX name<br>
+                ON 表(字段..)
+            </p>
+        </div>
+        <p class="title">删除表和索引</p>
+        <div class="component">
+           <p>
+               DROP TABLE 表<br>
+               MYSQL<br>
+                <div class="component">
+                    ALTER TABLE 表 DROP INDEX 索引
+                 </div>
+                Oracle<br>
+                <div class="component">
+                    DROP INDEX 索引
+                 </div>
+                 仅清空数据<br>
+                 TRUNCATE TABLE 表
+           </p>
+        </div>
+        <div class="component">
+            <p>
+               ALTER TABLE 表<br>
+                ADD 新列名 类型<br>
+                DROP COLUMN 名<br>
+                ALTER COLUMN 名 类型<br>
+            </p>
+        </div>
+        <p class="title">oracle自增</p>
+        <div class="component">
+            <p>
+                CREATE SEQUENCE 名<br>
+                MINVALUE 1<br>
+                START WITH 1<br>
+                INCREMENT BY 1<br>
+                CACHE 10
+            </p>
+        </div>
+        <p class="title">视图</p>
+        <div class="component">
+            <p>
+                CREATE VIEW 名 AS<br>
+                SELECT column_name(s)<br>
+                ...
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-4" style="text-align: left;">
+                一张图技术(SQL)
+            </div>
+             <div class="col-4" style="text-align: center;">
+                <a href="index.html">目录</a>
+            </div>
+             <div class="col-4" style="text-align: right;">
+                AntonioTheFuture @2022
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
