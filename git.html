@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+    <link href="./bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <style>
+        .component-group{
+            /* display: flex; */
+            column-count:1;
+            /* flex-direction: column;
+            align-items:flex-start;
+            justify-content: space-between;
+            flex-flow: wrap;
+            flex-wrap: wrap; */
+        }
+        .component{
+            background-color: #eeeeee;
+            border-radius: 3mm;
+            height: auto;
+            color: black;
+            margin-bottom: 5mm;
+            padding:1mm;
+            padding-left: 3mm;
+            flex-grow: 0;
+            flex-basis: auto;
+            font-family: PingFangSC-Medium, sans-serif;
+        }
+        .component-h5{
+            
+        }
+
+        .component-auto{
+            width: auto;
+        }
+
+        
+    </style>
+</head>
+<body class="page">
+    <div class="component-group">
+        <div class="component">
+            <img src="./git/git1.png" style="width: 100%">
+            <p>
+                Remote 远程仓库<br>
+                Repository 本地仓库<br>
+                Index/Stage 暂存区<br>
+                Workspace 工作区<br>
+            </p>
+        </div>
+    </div>
+    <div class="component-group" style="column-count: 3">
+        <div class="component">
+            <p>
+                init 初始化本地<br>
+                .gitconfig 配置文件<br>
+                config 显示配置
+
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                文件操作<br>
+                rm 删除文件<br>
+                mv 改名<br>
+            </p>
+        </div>
+        <div class="component">
+            <p>
+                分支操作<br>
+                branch 本地分支<br>
+                -r 远程分支<br>
+                branch 新分支名<br>
+                checkout 切换分支<br>
+                merge 合并分支<br>
+            </p>
+        </div>
+        
+        <div class="component">
+            <p>
+                tag 标签<br>
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-4" style="text-align: left;">
+                一张图技术(Git)
+            </div>
+             <div class="col-4" style="text-align: center;">
+                <a href="index.html">目录</a>
+            </div>
+             <div class="col-4" style="text-align: right;">
+                AntonioTheFuture @2022
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
